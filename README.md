@@ -20,6 +20,8 @@ it('accepts the customer name', () => {
  
   assert.include(browser.getText('#deliver-to'), name);
 });
+
+
 You can read the description in plain English terms: it accepts the customer name. You can run the test to confirm the functionality works as described.
 
 Instructions
@@ -33,6 +35,8 @@ describe('to clear an order', () => {
  
   });
 });
+
+
 Checkpoint 2 Passed
 
 2.Copy and paste the body of the test within that block (underneath the line containing it). This part of the test will confirm that the clear order button deletes the selected options. When you’re done, click Run.
@@ -52,12 +56,14 @@ Checkpoint 2 Passed
       assert.equal(browser.getText('#fillings'), '');
       assert.equal(browser.getText('#size'), '');
       assert.equal(browser.getText('#pickUp'), '');
+      
 Checkpoint 3 Passed
 
 3.Run the test suite. You should see the new test fail. By running the suite you’ve confirmed that the application does not behave as expected!
 
 Checkpoint 4 Passed
 
-Stuck? Get a hint
 
 4.Test this manually. Run npm start in the terminal, reload the page, and see that the clear order button doesn’t exist yet!
+
+Source of exercise: Codecademy Pro
